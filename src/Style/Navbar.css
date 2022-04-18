@@ -1,0 +1,42 @@
+nav{
+  display: flex;
+  gap: 5.5rem;
+}
+
+.nav-img{
+  max-width: 14rem;
+  height: auto;
+  display: block;
+  cursor: pointer;
+} 
+
+.nav-list{
+  display: flex;
+  gap: 3rem; 
+}
+
+.nav-list li{
+  position: relative;
+  list-style: none;
+  color: var(--Dark-grayish-blue);
+  cursor: pointer;
+}
+
+.nav-list li:hover{
+  color: var(--Black);
+}
+
+.nav-list li::before{
+  content: "";
+  position: absolute;
+  top: 6.4rem;
+  height: 0.4rem;
+  width: 0%;
+  background-color: var(--Orange);
+  cursor: auto;
+}
+
+.nav-list li:hover::before{
+  width: 100%;
+  transition: width 0.3s;
+}

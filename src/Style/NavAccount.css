@@ -1,0 +1,26 @@
+.navAccount{
+  display: flex;
+  align-items: center;
+  gap: 4.5rem;
+}
+
+.shoppingCart{
+  max-width: 2.5rem;
+  height: auto;
+  display: block;
+  cursor: pointer;
+}
+
+.avatar{
+  max-width: 5rem;
+  height: auto;
+  display: block;
+  border-radius: 50%;
+  outline: solid 0px var(--Orange);
+  cursor: pointer;
+}
+
+.avatar:hover{
+  outline: 0.3rem solid var(--Orange);
+  transition: outline 0.2s;
+}
