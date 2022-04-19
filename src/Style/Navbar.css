@@ -1,9 +1,10 @@
 nav{
   display: flex;
   gap: 5.5rem;
+  align-items: center;
 }
 
-.nav-img{
+.nav-img-logo{
   max-width: 14rem;
   height: auto;
   display: block;
@@ -13,20 +14,21 @@ nav{
 .nav-list{
   display: flex;
   gap: 3rem; 
+  
 }
 
-.nav-list li{
-  position: relative;
+.nav-item{
   list-style: none;
   color: var(--Dark-grayish-blue);
   cursor: pointer;
+  position: relative;
 }
 
-.nav-list li:hover{
+.nav-item:hover{
   color: var(--Black);
 }
 
-.nav-list li::before{
+.nav-item::before{
   content: "";
   position: absolute;
   top: 6.4rem;
@@ -36,7 +38,7 @@ nav{
   cursor: auto;
 }
 
-.nav-list li:hover::before{
+.nav-item:hover::before{
   width: 100%;
   transition: width 0.3s;
 }

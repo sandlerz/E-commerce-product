@@ -14,9 +14,9 @@ html {
 body {
   font-family: 'Kumbh Sans', sans-serif;
   font-size: 1.6rem;
-  /* display: grid;
-  place-content: center;
-  min-height: 100vh; */
+  display: grid;
+  justify-content: center;
+  min-height: 100vh;
 }
 
 p{
