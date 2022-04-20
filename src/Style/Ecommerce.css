@@ -7,3 +7,11 @@ header{
   width: 111rem;
   border-bottom: 1px solid var(--Grayish-blue);
 }
+
+main{
+  display: grid;
+  grid: auto / repeat(2, 50%);
+  height: 11.5rem;
+  max-width: 111rem;
+  width: 111rem;
+}

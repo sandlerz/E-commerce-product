@@ -1,10 +1,6 @@
 @media only screen and (max-width: 31.25em) {
   /* Header Breakpoint*/
 
-  html {
-    font-size: 2vw;
-  }
-
   header {
     width: 100vw;
     padding: 2.5rem 3rem;
@@ -12,21 +8,14 @@
     position: relative;
   }
 
+  /* Nav Links*/
+  
   nav {
     display: flex;
     gap: 2rem;
   }
-
-  .button{
-    height: 7.33rem;
-    font-size: 2.3rem;
-  }
-
-  .e-commerce {
-    width: 100vw;
-  }
-
-  .bgMobile {
+  
+  .bgMobile { /* bg menu overlay */
     top: 0;
     left: 0;
     position: absolute;
@@ -77,21 +66,24 @@
     color: var(--Black);
   }
 
+  /* End Nav Links */
+
   /* Nav Account and Cart */
 
   .navAccount {
     gap: 2.5rem;
   }
 
+  
+  .shoppingCart {
+    max-width: 3rem;
+    width: 3rem;
+  }
+
   .shoppingCart__popUp {
     width: 2.5rem;
     height: 2rem;
     font-size: 1.4rem;
-  }
-
-  .shoppingCart {
-    max-width: 3rem;
-    width: 3rem;
   }
 
   .avatar {
@@ -144,4 +136,8 @@
   }
 
   /* End Header Breakpoint*/
+
+  /* Main */
+
+
 }

@@ -4,6 +4,10 @@ import trash from "../images/icon-delete.svg";
 import '../Style/PopUp.css'
 
 export default function PopUp(props) {
+  const {price, discount} = props.data
+
+  let total = price - (price * discount / 100).toFixed(2)
+
   return (
     <div
       className="popUp"
@@ -19,10 +23,10 @@ export default function PopUp(props) {
               src={imgProduct}
               alt="image product"
             />
-            <div>
-              <p className="main__productName">Fall Limited Edition Sneakers</p>
+            <div className="productName__container">
+              <p className="main__productName">{props.data.name}</p>
               <p className="main__productName">
-                $125.00 x {props.cart}{" "}
+                ${total} x {props.cart}{" "}
                 <span className="main__productCost">
                   ${(props.cart * 125).toFixed(2)}
                 </span>

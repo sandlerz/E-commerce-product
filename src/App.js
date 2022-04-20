@@ -1,26 +1,34 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import Navbar from "./Components/Navbar";
 import NavAccount from "./Components/NavAccount";
 import ProductImg from "./Components/ProductImg";
 import ProductDescription from "./Components/ProductDescription.jsx";
+import getData from "./data";
 
 import "./Style/Ecommerce.css";
 
 function Ecommerce() {
   const [cart, setCart] = useState(10);
+  const [data, setData] = useState(getData());
+
+  useEffect(() => {
+    setData(getData());
+  }, []);
+
   const handleDelete = () => {
     setCart(0);
   };
+
 
   return (
     <div className="e-commerce">
       <header>
         <Navbar />
-        <NavAccount handleDelete={handleDelete} cart={cart} />
+        <NavAccount handleDelete={handleDelete} cart={cart} data={data.shoes} />
       </header>
       <main>
-        <ProductImg />
+        <ProductImg data={data.shoes.images}/>
         <ProductDescription />
       </main>
     </div>

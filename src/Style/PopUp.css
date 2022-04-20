@@ -33,9 +33,17 @@
   width: 100%;
 }
 
+.productName__container {
+  width: 21.3rem;
+  text-align: left;
+}
+
 .main__productName {
   color: var(--Dark-grayish-blue);
   line-height: 2.5rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .main__productCost {

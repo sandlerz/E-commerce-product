@@ -45,6 +45,7 @@ export default function NavAccount(props) {
           show={showPopUp}
           cart={props.cart}
           handleDelete={props.handleDelete}
+          data={props.data}
         />
       ) : null}
     </div>
