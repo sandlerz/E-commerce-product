@@ -1,39 +1,32 @@
 @media only screen and (max-width: 31.25em) {
   /* Header Breakpoint*/
 
-  html{
+  html {
     font-size: 2vw;
   }
 
-  header{
+  header {
     width: 100vw;
     padding: 2.5rem 3rem;
     height: auto;
     position: relative;
   }
 
-  nav{
+  nav {
     display: flex;
     gap: 2rem;
   }
 
-  .nav-img-logo{
-    max-width: 19rem;
-    width: 19rem;
+  .button{
+    height: 7.33rem;
+    font-size: 2.3rem;
   }
 
-  .nav-icon-hamburger{
-    display: block;
-    max-width: 2.5rem;
-    width: 2.5rem;
-    max-height: 2.5rem;
-    height: 2.5rem;
-    cursor: pointer;
-    position: relative;
-    z-index: 1000;
+  .e-commerce {
+    width: 100vw;
   }
 
-  .bg-mobile{
+  .bgMobile {
     top: 0;
     left: 0;
     position: absolute;
@@ -45,7 +38,23 @@
     transition: opacity 1s;
   }
 
-  .nav-list-mobile{
+  .logo {
+    max-width: 19rem;
+    width: 19rem;
+  }
+
+  .hamburgerIcon {
+    display: block;
+    max-width: 2.5rem;
+    width: 2.5rem;
+    max-height: 2.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+    position: relative;
+    z-index: 1000;
+  }
+
+  .navbar {
     position: absolute;
     top: 0;
     left: 0;
@@ -62,26 +71,77 @@
     transition: transform 0.6s;
   }
 
-  .nav-item{
+  .navbar__item {
     font-weight: 700;
     font-size: 3.5rem;
     color: var(--Black);
   }
 
-  .navAccount{
+  /* Nav Account and Cart */
+
+  .navAccount {
     gap: 2.5rem;
   }
-  
-  .shoppingCart{
+
+  .shoppingCart__popUp {
+    width: 2.5rem;
+    height: 2rem;
+    font-size: 1.4rem;
+  }
+
+  .shoppingCart {
     max-width: 3rem;
     width: 3rem;
   }
-  
-  .avatar{
+
+  .avatar {
     max-width: 5rem;
     width: 3.5rem;
   }
 
-  /* End Header Breakpoint*/
+  .popUp {
+    transform: translate(4%, 4%);
+    left: unset;
+    right: 0;
+    width: 96vw;
+    height: 34rem;
+  }
 
+  .popUp__title {
+    height: 9.4rem;
+    display: flex;
+    align-items: center;
+    font-size: 2.8rem;
+  }
+
+  .popUp__main{
+    height: 24.6rem;
+    padding: 3.5rem 2.5rem;
+  }
+
+  .main__productName{
+    font-size: 2.3rem;
+    line-height: 3.5rem;
+    width: 30rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  .empty__shoppingCart {
+    font-size: 2rem;
+  }
+
+  .img--popUp {
+    max-width: 6.67rem;
+  }
+
+  .img--trash {
+    width: 2rem;
+    display: block;
+    height: auto;
+    cursor: pointer;
+  }
+
+  /* End Header Breakpoint*/
 }

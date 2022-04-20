@@ -1,34 +1,33 @@
-nav{
+nav {
   display: flex;
   gap: 5.5rem;
   align-items: center;
 }
 
-.nav-img-logo{
+.logo {
   max-width: 14rem;
   height: auto;
   display: block;
   cursor: pointer;
-} 
-
-.nav-list{
-  display: flex;
-  gap: 3rem; 
-  
 }
 
-.nav-item{
+.navbar {
+  display: flex;
+  gap: 3rem;
+}
+
+.navbar__item {
   list-style: none;
   color: var(--Dark-grayish-blue);
   cursor: pointer;
   position: relative;
 }
 
-.nav-item:hover{
+.navbar__item:hover {
   color: var(--Black);
 }
 
-.nav-item::before{
+.navbar__item::before {
   content: "";
   position: absolute;
   top: 6.4rem;
@@ -38,7 +37,7 @@ nav{
   cursor: auto;
 }
 
-.nav-item:hover::before{
+.navbar__item:hover::before {
   width: 100%;
   transition: width 0.3s;
 }

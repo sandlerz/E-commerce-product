@@ -1,0 +1,66 @@
+.popUp {
+  display: initial;
+  position: absolute;
+  top: 6rem;
+  left: 0;
+  width: 36rem;
+  height: 26rem;
+  transform: translateX(-48%);
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0px 10px 25px 1px rgba(0, 0, 0, 0.1);
+}
+
+.popUp__title {
+  padding: 2.5rem;
+  border-bottom: 0.1rem solid var(--Dark-grayish-blue);
+  font-size: 1.7rem;
+  height: 7rem;
+}
+
+.popUp__main {
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 19rem;
+}
+
+.main__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.main__productName {
+  color: var(--Dark-grayish-blue);
+  line-height: 2.5rem;
+}
+
+.main__productCost {
+  font-weight: bolder;
+  color: var(--Black);
+}
+
+.empty__shoppingCart {
+  display: grid;
+  place-content: center;
+  height: 19rem;
+  font-weight: bolder;
+  color: var(--Dark-grayish-blue);
+}
+
+.img--popUp {
+  max-width: 5rem;
+}
+
+.img--trash {
+  display: block;
+  height: auto;
+  cursor: pointer;
+}
+
+.button--checkout {
+  width: 100%;
+}
