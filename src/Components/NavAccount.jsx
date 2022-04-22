@@ -1,33 +1,33 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react"
 
-import PopUp from "./PopUp";
+import PopUp from "./PopUp"
 
-import shoppingCart from "../images/icon-cart.svg";
-import avatar from "../images/image-avatar.png";
+import shoppingCart from "../images/icon-cart.svg"
+import avatar from "../images/image-avatar.png"
 
-import "../Style/NavAccount.css";
+import "../Style/NavAccount.css"
 
 export default function NavAccount(props) {
-  const [showPopUp, setShowPopUp] = useState(false);
+  const [showPopUp, setShowPopUp] = useState(false)
 
-  const ref = useRef(null);
+  const ref = useRef(null)
 
-  const handleClickOutside = (event) => {
+  const handleClickOutside = event => {
     if (ref.current && !ref.current.contains(event.target)) {
-      setShowPopUp(false);
+      setShowPopUp(false)
     }
-  };
+  }
 
   useEffect(() => {
-    document.addEventListener("click", handleClickOutside, true);
+    document.addEventListener("click", handleClickOutside, true)
     return () => {
-      document.removeEventListener("click", handleClickOutside, true);
-    };
-  }, []);
+      document.removeEventListener("click", handleClickOutside, true)
+    }
+  }, [])
 
   const handlePopUp = () => {
-    setShowPopUp((prev) => !prev);
-  };
+    setShowPopUp(prev => !prev)
+  }
 
   return (
     <div className="navAccount" ref={ref}>
@@ -49,5 +49,5 @@ export default function NavAccount(props) {
         />
       ) : null}
     </div>
-  );
+  )
 }

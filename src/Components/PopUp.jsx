@@ -1,12 +1,12 @@
-import imgProduct from "../images/image-product-1-thumbnail.jpg";
-import trash from "../images/icon-delete.svg";
+import imgProduct from "../images/image-product-1-thumbnail.jpg"
+import trash from "../images/icon-delete.svg"
 
-import '../Style/PopUp.css'
+import "../Style/PopUp.css"
 
 export default function PopUp(props) {
-  const {price, discount} = props.data
+  const { price, discount } = props.data
 
-  let total = price - (price * discount / 100).toFixed(2)
+  let total = price - ((price * discount) / 100).toFixed(2)
 
   return (
     <div
@@ -45,5 +45,5 @@ export default function PopUp(props) {
         <div className="empty__shoppingCart">Your cart is empty.</div>
       )}
     </div>
-  );
+  )
 }

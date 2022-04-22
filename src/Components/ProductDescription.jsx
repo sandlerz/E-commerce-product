@@ -4,7 +4,7 @@ import minus from "../images/icon-minus.svg"
 import plus from "../images/icon-plus.svg"
 import cart from "../images/icon-cart.svg"
 
-import '../Style/productDescription.css'
+import "../Style/productDescription.css"
 
 export default function ProductDescription({ data, handleCart }) {
   const [count, setCount] = useState(0)
@@ -13,7 +13,7 @@ export default function ProductDescription({ data, handleCart }) {
   const { name, price, discount, description } = shoes
 
   const handleMinus = () => {
-    setCount(prev => prev === 0 ? 0 : prev - 1)
+    setCount(prev => (prev === 0 ? 0 : prev - 1))
   }
 
   const handlePlus = () => {
@@ -25,7 +25,7 @@ export default function ProductDescription({ data, handleCart }) {
     setCount(0)
   }
 
-  const sale = price * discount /100
+  const sale = (price * discount) / 100
 
   return (
     <div className="ProductDescription">

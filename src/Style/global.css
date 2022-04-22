@@ -53,7 +53,7 @@ p {
 
 :root {
   /* ### Primary */
-  
+
   --Orange: hsl(26, 100%, 55%);
   --Pale-orange: hsl(25, 100%, 94%);
 
@@ -73,12 +73,12 @@ p {
   html {
     font-size: 2vw;
   }
-  
-  .button{
+
+  .button {
     height: 7.33rem;
     font-size: 2.3rem;
   }
-  
+
   .e-commerce {
     width: 100vw;
   }
