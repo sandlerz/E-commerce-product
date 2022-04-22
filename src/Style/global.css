@@ -65,6 +65,8 @@ p {
   --Light-grayish-blue: hsl(223, 64%, 98%);
   --White: hsl(0, 0%, 100%);
   --Black: hsl(0, 0%, 0%); /* (with 75% opacity for lightbox background) */
+
+  --Orange-Bg: hsla(26, 100%, 55%, 0.281);
 }
 
 @media only screen and (max-width: 31.25em) {

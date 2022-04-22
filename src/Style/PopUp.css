@@ -9,6 +9,7 @@
   background-color: white;
   border-radius: 1rem;
   box-shadow: 0px 10px 25px 1px rgba(0, 0, 0, 0.1);
+  z-index: 10;
 }
 
 .popUp__title {
@@ -34,7 +35,6 @@
 }
 
 .productName__container {
-  width: 21.3rem;
   text-align: left;
 }
 

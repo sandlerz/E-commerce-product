@@ -139,5 +139,83 @@
 
   /* Main */
 
+  main{
+    display: flex;
+    flex-direction: column;
+    max-width: 100vw;
+    height: auto;
+  }
 
+  .productImg{
+    padding: 0;
+    height: 40rem;
+    overflow: hidden;
+    display: block;
+  }
+
+  .img--big {
+    border-radius: 0;
+    max-width:100%;
+    max-height:100%;
+    object-fit: cover;
+  }
+
+  .arrow__container{
+    top: 26rem;
+  }
+
+  .arrow--left{
+    transform: translateX(35%)
+  }
+
+  .arrow--right{
+    transform: translateX(-35%)
+  }
+
+  /* product description */
+
+  .ProductDescription {
+    padding: 2.67rem;
+  }
+
+  .ProductDescription__description{
+    font-size: 2rem;
+  }
+
+  .price{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+  }
+
+  .current__price{
+    font-size: 3.5rem;
+  }
+
+  .current_discount{
+    font-size: 2.3rem;
+  }
+
+  .price_previous{
+    font-size: 2.5rem;
+  }
+
+  .btn__container{
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .counter_container{
+    height: 7.33rem;
+    width: 100%;
+  }
+
+  .counter{
+    width: 10rem;
+  }
+
+  .button--add{
+    width: 100%;
+  }
 }

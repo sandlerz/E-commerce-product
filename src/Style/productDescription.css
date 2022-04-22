@@ -1,0 +1,98 @@
+.ProductDescription {
+  padding: 15.5rem 5rem 0 6.5rem;
+}
+
+.companyName {
+  text-transform: uppercase;
+  color: var(--Orange);
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.2rem;
+}
+
+.ProductDescription__name {
+  font-size: 4rem;
+  line-height: 4rem;
+}
+
+.ProductDescription__description {
+  color: var(--Dark-grayish-blue);
+  margin: 3.5rem 0;
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 3rem;
+  font-weight: 700;
+}
+
+.price__current {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  gap: 1.5rem;
+}
+
+.current__price {
+  font-size: 2.5rem;
+}
+
+.current_discount {
+  font-size: 1.5rem;
+  color: var(--Orange);
+  display: grid;
+  place-content: center;
+  background-color: var(--Orange-Bg);
+  border-radius: 0.5rem;
+  padding: 0.3rem 0.5rem;
+}
+
+.price_previous {
+  color: var(--Grayish-blue);
+  text-decoration: line-through;
+}
+
+.btn__container{
+  display: flex;
+  gap: 1.5rem;
+}
+
+.counter_container{
+  display: flex;
+  width: 15.5rem;
+  height: 5.5rem;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--Light-grayish-blue);
+  border-radius: 1rem;
+}
+
+.counter{
+  width: 5.166rem;
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+  height: 100%;
+  user-select: none;
+}
+
+.count__sum{
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.button--add{
+  width: 27rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  box-shadow: 0px 10px 25px -10px var(--Orange);
+
+}
+
+.button--add img{
+  filter: brightness(0) invert(1);
+  width: 2rem;
+}
