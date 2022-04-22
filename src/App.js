@@ -9,7 +9,7 @@ import getData from "./data";
 import "./Style/Ecommerce.css";
 
 function Ecommerce() {
-  const [cart, setCart] = useState(10);
+  const [cart, setCart] = useState(0);
   const [data, setData] = useState(getData());
 
   useEffect(() => {
@@ -20,6 +20,9 @@ function Ecommerce() {
     setCart(0);
   };
 
+  const handleCart = count => {
+    setCart(prev => prev + count)
+  }
 
   return (
     <div className="e-commerce">
@@ -29,7 +32,10 @@ function Ecommerce() {
       </header>
       <main>
         <ProductImg data={data.shoes.images}/>
-        <ProductDescription />
+        <ProductDescription 
+          data={data}
+          handleCart={handleCart}
+        />
       </main>
     </div>
   );
