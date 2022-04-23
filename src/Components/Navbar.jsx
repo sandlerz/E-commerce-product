@@ -1,5 +1,6 @@
 import { useMediaQuery } from "react-responsive"
 import { useState } from "react"
+import { NavLink } from "react-router-dom"
 
 import Logo from "../images/logo.svg"
 import hamburgerNav from "../images/icon-menu.svg"
@@ -34,19 +35,19 @@ export default function Navbar() {
         <img className="logo" src={Logo} alt="Logo" />
         <ul className="navbar">
           <li className="navbar__item">
-            <a href="">Collections</a>
+            <NavLink to="/collections">Collections</NavLink>
           </li>
           <li className="navbar__item">
-            <a href="">Men</a>
+            <NavLink to="/men">Men</NavLink>
           </li>
           <li className="navbar__item">
-            <a href="">Women</a>
+            <NavLink to="/women">Women</NavLink>
           </li>
           <li className="navbar__item">
-            <a href="">About</a>
+            <NavLink to="/about">About</NavLink>
           </li>
           <li className="navbar__item">
-            <a href="">Contact</a>
+            <NavLink to="/contact">Contact</NavLink>
           </li>
         </ul>
       </Desktop>
@@ -62,19 +63,19 @@ export default function Navbar() {
         }
         <ul className="navbar" style={!toggleNav ? transform : null}>
           <li className="navbar__item">
-            <a href="">Collections</a>
+            <NavLink to="/collections">Collections</NavLink>
           </li>
           <li className="navbar__item">
-            <a href="">Men</a>
+            <NavLink to="/men">Men</NavLink>
           </li>
           <li className="navbar__item">
-            <a href="">Women</a>
+            <NavLink to="/women">Women</NavLink>
           </li>
           <li className="navbar__item">
-            <a href="">About</a>
+            <NavLink to="/about">About</NavLink>
           </li>
           <li className="navbar__item">
-            <a href="">Contact</a>
+            <NavLink to="/contact">Contact</NavLink>
           </li>
         </ul>
         <img className="logo" src={Logo} alt="Logo" />

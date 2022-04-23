@@ -89,3 +89,13 @@ p {
     width: 100vw;
   }
 }
+
+.btn--back{
+  width: 15rem;
+  display: grid;
+  place-content: center;
+}
+
+.main__back{
+  margin: 20rem;
+}
