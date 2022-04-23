@@ -31,6 +31,11 @@
   display: block;
 }
 
+.shoppingCart:hover {
+  filter: invert(64%) sepia(61%) saturate(4127%) hue-rotate(347deg)
+    brightness(102%) contrast(101%);
+}
+
 .avatar {
   max-width: 5rem;
   height: auto;

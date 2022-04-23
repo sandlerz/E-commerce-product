@@ -75,6 +75,12 @@
   cursor: pointer;
   height: 100%;
   user-select: none;
+  border-radius: 0.5rem;
+  transition: background 0.3s;
+}
+
+.counter:hover {
+  background-color: hsla(26, 100%, 55%, 0.193);
 }
 
 .count__sum {

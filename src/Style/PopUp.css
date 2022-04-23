@@ -69,6 +69,11 @@
   cursor: pointer;
 }
 
+.img--trash:hover {
+  filter: invert(19%) sepia(62%) saturate(6584%) hue-rotate(353deg)
+    brightness(89%) contrast(129%);
+}
+
 .button--checkout {
   width: 100%;
 }

@@ -21,6 +21,7 @@ export default function WindowOverlay({ data, onClick, show, handleFull }) {
       src={image}
       key={index}
       onClick={() => setImg(index)}
+      alt="Product-Image"
     />
   ))
 
@@ -30,14 +31,19 @@ export default function WindowOverlay({ data, onClick, show, handleFull }) {
       style={show ? { display: "flex" } : { display: "none" }}
     >
       <div className="newWindow__container">
-        <img src={close} className="img imgClose" onClick={onClick} />
+        <img
+          src={close}
+          className="img imgClose"
+          onClick={onClick}
+          alt="Close-Window"
+        />
 
         <div className="imgBig__container">
           <div
             className="arrow--left arrow__container"
             onClick={() => setImg(prev => (prev === 0 ? 3 : prev - 1))}
           >
-            <img className="arrow" src={left} alt="" />
+            <img className="arrow" src={left} aria-hidden="true" />
           </div>
 
           <img className="img img--big" src={img} alt="product" />
@@ -46,7 +52,7 @@ export default function WindowOverlay({ data, onClick, show, handleFull }) {
             className="arrow--right arrow__container"
             onClick={() => setImg(prev => (prev === 3 ? 0 : prev + 1))}
           >
-            <img className="arrow" src={right} alt="" />
+            <img className="arrow" src={right} aria-hidden="true" />
           </div>
         </div>
 

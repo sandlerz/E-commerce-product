@@ -23,6 +23,7 @@ export default function ProductImg({ data }) {
       src={image}
       key={index}
       onClick={() => handleFull(index)}
+      alt="Product-Image"
     />
   ))
 
@@ -46,7 +47,7 @@ export default function ProductImg({ data }) {
         <img
           className="img img--big"
           src={img}
-          alt="product"
+          alt="Product-image"
           onClick={() => setShow(true)}
         />
         <div className="thumbnail__container">{thumbnailImg}</div>
@@ -63,14 +64,14 @@ export default function ProductImg({ data }) {
           className="arrow--left arrow__container"
           onClick={() => setImg(prev => (prev === 0 ? 3 : prev - 1))}
         >
-          <img className="arrow" src={left} alt="" />
+          <img className="arrow" src={left} aria-hidden="true" />
         </div>
         <img className="img img--big" src={img} alt="product" />
         <div
           className="arrow--right arrow__container"
           onClick={() => setImg(prev => (prev === 3 ? 0 : prev + 1))}
         >
-          <img className="arrow" src={right} alt="" />
+          <img className="arrow" src={right} aria-hidden="true" />
         </div>
       </Mobile>
     </div>

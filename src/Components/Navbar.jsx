@@ -31,13 +31,23 @@ export default function Navbar() {
   return (
     <nav>
       <Desktop>
-        <img className="logo" src={Logo} />
+        <img className="logo" src={Logo} alt="Logo" />
         <ul className="navbar">
-          <li className="navbar__item">Collections</li>
-          <li className="navbar__item">Men</li>
-          <li className="navbar__item">Women</li>
-          <li className="navbar__item">About</li>
-          <li className="navbar__item">Contact</li>
+          <li className="navbar__item">
+            <a href="">Collections</a>
+          </li>
+          <li className="navbar__item">
+            <a href="">Men</a>
+          </li>
+          <li className="navbar__item">
+            <a href="">Women</a>
+          </li>
+          <li className="navbar__item">
+            <a href="">About</a>
+          </li>
+          <li className="navbar__item">
+            <a href="">Contact</a>
+          </li>
         </ul>
       </Desktop>
       <Mobile>
@@ -46,16 +56,28 @@ export default function Navbar() {
             className="hamburgerIcon"
             src={toggleNav ? hamburgerNav : closeBurger}
             onClick={handleBurger}
+            aria-hidden="true"
+            alt="*"
           />
         }
         <ul className="navbar" style={!toggleNav ? transform : null}>
-          <li className="navbar__item">Collections</li>
-          <li className="navbar__item">Men</li>
-          <li className="navbar__item">Women</li>
-          <li className="navbar__item">About</li>
-          <li className="navbar__item">Contact</li>
+          <li className="navbar__item">
+            <a href="">Collections</a>
+          </li>
+          <li className="navbar__item">
+            <a href="">Men</a>
+          </li>
+          <li className="navbar__item">
+            <a href="">Women</a>
+          </li>
+          <li className="navbar__item">
+            <a href="">About</a>
+          </li>
+          <li className="navbar__item">
+            <a href="">Contact</a>
+          </li>
         </ul>
-        <img className="logo" src={Logo} />
+        <img className="logo" src={Logo} alt="Logo" />
         <div
           className="bgMobile"
           style={!toggleNav ? opacity : zIndex}

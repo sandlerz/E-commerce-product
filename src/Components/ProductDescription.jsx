@@ -47,16 +47,24 @@ export default function ProductDescription({ data, handleCart }) {
       </div>
       <div className="btn__container">
         <div className="counter_container">
-          <div onClick={handleMinus} className="counter">
-            <img src={minus} alt="" />
+          <div
+            onClick={handleMinus}
+            className="counter"
+            aria-labels="remove one to cart"
+          >
+            <img src={minus} alt="button-minus" />
           </div>
           <span className="count__sum">{count}</span>
-          <div onClick={handlePlus} className="counter">
-            <img src={plus} alt="" />
+          <div
+            onClick={handlePlus}
+            className="counter"
+            aria-labels="add one to cart"
+          >
+            <img src={plus} alt="button-plus" />
           </div>
         </div>
         <button className="button button--add" onClick={handleButton}>
-          <img src={cart} alt="" /> Add to cart
+          <img src={cart} alt="*" aria-hidden="true" /> Add to cart
         </button>
       </div>
     </div>

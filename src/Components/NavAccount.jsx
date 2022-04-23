@@ -31,14 +31,18 @@ export default function NavAccount(props) {
 
   return (
     <div className="navAccount" ref={ref}>
-      <div className="shoppingCart_container" onClick={handlePopUp}>
-        <img className="shoppingCart" src={shoppingCart} />
+      <div
+        className="shoppingCart_container"
+        onClick={handlePopUp}
+        aria-label="Open popup"
+      >
+        <img className="shoppingCart" src={shoppingCart} alt="Shopping-Cart" />
         {props.cart ? (
           <div className="shoppingCart__popUp">{props.cart}</div>
         ) : null}
       </div>
 
-      <img className="avatar" src={avatar} />
+      <img className="avatar" src={avatar} alt="Avatar" />
 
       {showPopUp ? (
         <PopUp

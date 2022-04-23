@@ -35,8 +35,8 @@ export default function PopUp(props) {
             <img
               className="img--trash"
               src={trash}
-              alt="delete"
               onClick={props.handleDelete}
+              alt="Delete-icon"
             />
           </div>
           <button className="button button--checkout">Checkout</button>
